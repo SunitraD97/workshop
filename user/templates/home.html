@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body >
+    {% block car %}
+      <h1> Car deposite data</h1> 
+          <form method="GET"  action="{% url 'add' %}" style="padding-left:80%">
+            <button class="add" type="submit" >Add</button>
+          </form>
+        <div class="tables" method="POST">
+          <table>
+              <thead>
+                <tr>
+                  <th>Car Number</th>
+                  <th>Name</th>
+                  <th>Car of Type</th>
+                  <th>Date</th>
+                  <th>Phone</th> 
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead> 
+                {% for cars in user_list %} 
+                <tr>
+                  <td>{{ cars.carnumber }}</td>
+                  <td>{{ cars.name }}</td>
+                  <td>{{ cars.car_type }}</td>
+                  <td>{{ cars.date }}</td>
+                  <td>{{ cars.phone }}</td>
+                  <td><a href="{% url 'edit' pk=cars.pk%}"><button class="edit" type="submit">Edit</button></a></td>
+                  <td><a href="{% url 'delete' pk=cars.pk%}"><button class="delete" type="submit">Delete</button></a></td>   
+                </tr>
+                {% empty %}
+                  <tr>
+                    <td colspan="7" class="text-center bg-warning">No Deposite Data</td>
+                  </tr>
+                {% endfor %}  
+          </table>
+        </div>
+    {% endblock %}
+  </body>
+</html>

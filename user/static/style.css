@@ -1,0 +1,136 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    text-shadow: 2px 2px 4px rgb(231, 172, 172);
+}
+td,td{
+    text-align: center;
+    padding: 8px;
+    border-bottom: 4px solid rgb(214, 214, 214);
+}
+tr{
+    background-color: rgb(19, 211, 105);
+}
+
+tr:nth-child(even) {background-color: hsl(150, 49%, 57%); }
+th{
+    background-color: rgb(5, 136, 92);
+    color: aliceblue;
+    height : 50px;
+    
+}
+body{
+    background-color: rgb(255, 255, 255);
+    padding-left: 10%;
+    padding-right: 10%
+}
+.tables{
+    font-family: "Georgia", Times, serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    width: 100%;
+}
+.add{
+    background-color: rgba(13, 157, 214, 0.507);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
+    margin: 5px 5px;
+}
+.add:hover {
+    background-color: #1deeba;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 12px 16px 0 rgba(146, 204, 91, 0.24), 0 17px 50px 0 rgba(148, 204, 95, 0.19);
+  }
+.edit{
+    background-color: rgb(236, 194, 53);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(250, 250, 250);;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
+    margin: 5px 5px;
+}
+.edit:hover {
+    background-color: #f0c069;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 12px 16px 0 rgba(196, 167, 90, 0.24), 0 17px 50px 0 rgba(209, 165, 83, 0.19);
+  }
+.delete{
+    background-color: rgb(211, 38, 38);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(250, 249, 249);;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
+    margin: 5px 5px  
+}
+.delete:hover {
+    background-color: #eba19c;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 12px 16px 0 rgba(196, 97, 97, 0.24), 0 17px 50px 0 rgba(180, 84, 84, 0.19);
+  }
+.save{
+    background-color: rgb(100, 120, 228);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(245, 244, 244);;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
+    margin: 5px 5px;
+}
+.save:hover {
+    background-color: #a2a1e9;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 12px 16px 0 rgba(84, 101, 150, 0.39), 0 17px 50px 0 rgba(81, 94, 151, 0.19);
+}
+.cancel{
+    background-color: rgb(216, 87, 87);
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(245, 244, 244);;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Georgia", Times, serif;
+    margin: 5px 5px;
+}
+.cancel:hover {
+    background-color: #ecb3af;
+    color: rgb(15, 15, 15);
+    box-shadow: 0 12px 16px 0 rgba(202, 145, 145, 0.24), 0 17px 50px 0 rgba(223, 135, 135, 0.521);
+}
+
+input[type=text], select {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid rgb(17, 143, 105);
+    border-radius: 10px;
+    border-left: 6px solid rgb(17, 143, 105);
+    border-right: 6px solid rgb(17, 143, 105);
+    box-sizing: border-box;
+  }
+  
+  
